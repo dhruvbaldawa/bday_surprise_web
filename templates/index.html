@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Surprise</title>
+	<link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+  
+  <script type="text/javascript">
+  var limit = "";
+  var until = "";
+  
+  function ajaxParams(limit, until) { 
+    return {
+      url: "{{ url_for('photos') }}",
+      type: "POST",
+      dataType: "json",
+      data: {"limit": limit, "until": until},
+      success: function(data) {
+        for (var i=0; i < data.photos.length; i++) {
+          $("#photos").append("<img src=\"" + data.photos[i] + "\" />");
+        }
+        window.limit = data.limit;
+        window.until = data.until;
+      },
+    };
+  }
+  
+  $(document).ready(function(){
+      $.ajax(ajaxParams(window.limit, window.until));
+  });
+  
+  $(window).scroll(function(){
+          if  ($(window).scrollTop() == $(document).height() - $(window).height()){
+             $.ajax({
+      url: "{{ url_for('photos') }}",
+      type: "POST",
+      dataType: "json",
+      data: {"limit": window.limit, "until": window.until},
+      success: function(data) {
+        for (var i=0; i < data.photos.length; i++) {
+          $("#photos").append("<img src=\"" + data.photos[i] + "\" />");
+        }
+        window.limit = data.limit;
+        window.until = data.until;
+      },
+    });
+          }
+  });
+  </script>
+  
+</head>
+
+<body>
+
+	<section id="photos">
+	</section>
+	
+</body>
+</html>

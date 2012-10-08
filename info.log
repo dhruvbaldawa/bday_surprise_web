@@ -1,0 +1,18 @@
+2012-08-16 21:17:16,329  * Running on http://0.0.0.0:5000/
+2012-08-16 21:17:16,330  * Restarting with reloader
+2012-08-16 22:35:01,598  * Running on http://0.0.0.0:5000/
+2012-08-16 22:35:01,599  * Restarting with reloader
+2012-08-16 22:35:11,184 Logged user: {u'user_id': u'568991432', u'algorithm': u'HMAC-SHA256', u'expires': 1345143600, u'oauth_token': u'AAAGwQzwwuRABAMalptKJx2ZC3liGLyFFZCuhQ4NoTHLF1tZCunDdLFvOaHFTAPeyt0MRZCID0sGuZBdxP0YFzebbQtZCYzUUn5LdRGZCgYJIQZDZD', u'user': {u'locale': u'en_US', u'country': u'in', u'age': {u'min': 21}}, u'issued_at': 1345136710}
+2012-08-16 22:35:11,185 127.0.0.1 - - [16/Aug/2012 22:35:11] "POST / HTTP/1.1" 302 -
+2012-08-16 22:35:11,208 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /home HTTP/1.1" 200 -
+2012-08-16 22:35:11,266 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/css/token-input.css HTTP/1.1" 304 -
+2012-08-16 22:35:11,268 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/css/bootstrap.css HTTP/1.1" 304 -
+2012-08-16 22:35:11,270 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/css/flames.css HTTP/1.1" 304 -
+2012-08-16 22:35:11,277 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/css/token-input-facebook.css HTTP/1.1" 304 -
+2012-08-16 22:35:11,405 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+2012-08-16 22:35:11,420 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/ajax-loader.gif HTTP/1.1" 304 -
+2012-08-16 22:35:11,423 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/f.jpg HTTP/1.1" 304 -
+2012-08-16 22:35:11,425 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/l.jpg HTTP/1.1" 304 -
+2012-08-16 22:35:11,428 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/a.jpg HTTP/1.1" 304 -
+2012-08-16 22:35:11,430 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/m.jpg HTTP/1.1" 304 -
+2012-08-16 22:35:11,432 127.0.0.1 - - [16/Aug/2012 22:35:11] "GET /static/img/e.jpg HTTP/1.1" 304 -
